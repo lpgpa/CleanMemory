@@ -14,7 +14,7 @@
 # Email: lpgpalmeida@gmail.com
 #
 # To run the script just set the execute permissions:
-# Chmod + x CleanMemory.sh or chmod 711 CleanMemory.sh
+# Chmod +x CleanMemory.sh or chmod 711 CleanMemory.sh
 # But you have to be to run the system root and
 # If you want to use the script in any directory for copying:
 # /usr/bin with the proper execute permissions.
@@ -45,7 +45,7 @@ if [ "$(id -u)" = "0" ]
 					sync 
 					echo
 					echo "Synchronized data ... clearing memory."
-					# Area of ??memory being cleaned
+					# Area of memory being cleaned
 					echo 3 > /proc/sys/vm/drop_caches
 					echo
 					echo "Total free memory"
