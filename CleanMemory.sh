@@ -56,5 +56,5 @@ if [ "$(id -u)" = "0" ]
 				fi
 					
 		else
-			echo Please dear user log in as root	
+			echo Please dear user log in as root or sudo command
 fi
