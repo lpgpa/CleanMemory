@@ -17,7 +17,7 @@
 # Chmod + x CleanMemory.sh or chmod 711 CleanMemory.sh
 # But you have to be to run the system root and
 # If you want to use the script in any directory for copying:
-# / usr / bin with the proper execute permissions.
+# /usr/bin with the proper execute permissions.
 #
 # Enter comment below with changes / corrections / improvements to the script
 
