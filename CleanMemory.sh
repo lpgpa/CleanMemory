@@ -26,33 +26,37 @@
 if [ "$(id -u)" = "0" ]		
 		then
 		# Free memory total Header
+		echo "------------------"
 		echo "Total free memory:" 
-		echo
+		echo "------------------"
 		# Returns information direct memory used
 		free -m -t | grep Mem: | cut -c37-40 
-		echo
+		echo "-------------------------------"
 		echo "To clear memory type 'Y' or 'y'"
                 echo "Do you want to clear the memory?"
+		echo "or another type to exit         "
+		echo "--------------------------------"
 		# Get variable keyboard
 		read CLEAN
 		# Check if you want to clear memory with the 'Y' or 'y' runs the script	
 			if  test $CLEAN == "Y" -o $CLEAN == "y"
 				then
-					echo
+					echo "--------------------------------------------------------"
 					echo "Synchronizing data between memory and HD ... please wait"
-					echo
+					echo "--------------------------------------------------------"
 					# Command to synchronize memory data with HD, if not used the sync is possible loss of memory data to HD
 					sync 
-					echo
+					echo "--------------------------------------"
 					echo "Synchronized data ... clearing memory."
 					# Area of memory being cleaned
 					echo 3 > /proc/sys/vm/drop_caches
-					echo
+					echo "--------------------------------------"
 					echo "Total free memory"
+					echo "--------------------------------------"
 					free -m -t
 					echo
 				else
-				        echo You typed out $CLEAN! To run the script use Y or y	
+				        echo You typed out $CLEAN! To run the script use Y or y	- Tks you for using!
 				fi
 					
 		else
