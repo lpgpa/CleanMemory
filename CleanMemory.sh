@@ -56,7 +56,10 @@ if [ "$(id -u)" = "0" ]
 					free -m -t
 					echo
 				else
-				        echo You typed out $CLEAN! To run the script use Y or y	- Tks you for using!
+					echo "-----------------------------------------------------------------------"
+				        echo "You typed out $CLEAN! To run the script use Y or y - Tks you for using!"
+					echo "-----------------------------------------------------------------------"
+
 				fi
 					
 		else
