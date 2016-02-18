@@ -20,7 +20,7 @@
 # /usr/bin with the proper execute permissions.
 #
 # Enter comment below with changes / corrections / improvements to the script
-
+#
 
 # Check whether the root to run the script
 if [ "$(id -u)" = "0" ]		
