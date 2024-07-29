@@ -28,7 +28,7 @@ if [ "$(id -u)" = "0" ]
 		echo "Total free memory:" 
 		echo "------------------"
 		# Returns information direct memory used
-		free -m -t | grep Mem: | cut -c37-40 
+		free -m -t | grep Mem: | cut -c29-40 
 		echo "-------------------------------"
 		echo "To clear memory type 'Y' or 'y'"
                 echo "Do you want to clear the memory?"
